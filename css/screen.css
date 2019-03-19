@@ -1,4 +1,4 @@
-/*------------------------------------*\
+</*------------------------------------*\
   #FONTS
 \*------------------------------------*/
 
@@ -167,6 +167,46 @@ a:focus {
     Object description
 */
 
+/*
+    Objects: Row
+    ---
+    Creates a horizontal row that stretches the viewport and adds padding around children
+*/
+
+.o-row {
+    padding: 24px 24px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.o-row--primary {
+    background: #e85e00;
+    color: white;
+}
+
+.o-row--dark {
+    color: white;
+    background: #111;
+}
+
+@media (min-width: 768px) {
+    .o-row--lg {
+        padding: 48px 48px 24px;
+    }
+}
+
+/*
+    Objects: Container
+    ---
+    Creates a horizontal container that sets de global max-width
+*/
+
+.o-container {
+    margin: 0 auto;
+    max-width: 90em;
+}
+
+
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
@@ -187,8 +227,30 @@ a:focus {
     Utility classes to put specific max widths onto elements.
 */
 
+/*
+    Utilities: max-width
+    ---
+    Utility classes to put specific max widths onto elements
+*/
+
 .u-max-width-sm {
     max-width: 36em;
+}
+
+.u-max-width-md {
+    max-width: 45em;
+}
+
+.u-max-width-lg {
+    max-width: 60em;
+}
+
+.u-max-width-xl {
+    max-width: 75em;
+}
+
+.u-max-width-none {
+    max-width: none;
 }
 
 /*
